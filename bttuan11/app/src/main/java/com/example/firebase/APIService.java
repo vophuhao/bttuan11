@@ -10,9 +10,10 @@ import retrofit2.http.GET;
 
 public interface APIService {
     Gson gson= new GsonBuilder().setDateFormat("yyyy MM dd HH:mm:ss").create();
+
     APIService servieapi = new Retrofit.Builder()
-            .baseUrl("http://app.iotstar.vn/appfoods/")
-            .addConverterFactory (GsonConverterFactory.create(gson))
+            .baseUrl("http://app.iotstar.vn:8081/appfoods/")
+            .addConverterFactory(GsonConverterFactory.create(gson))
             .build()
             .create(APIService.class);
     @GET("getvideos.php")
