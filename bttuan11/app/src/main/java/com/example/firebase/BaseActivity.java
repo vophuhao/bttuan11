@@ -24,6 +24,8 @@ public class BaseActivity extends AppCompatActivity {
     GoogleSignInClient gClient;
     GoogleSignInOptions gOptions;
 
+    Button btn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +51,11 @@ public class BaseActivity extends AppCompatActivity {
                     }
                 });
             }
+        });
+        btn=findViewById(R.id.upload);
+        btn.setOnClickListener(view -> {
+            Intent intent = new Intent(BaseActivity.this, UpLoadVideoActivity.class);
+            startActivity(intent);
         });
 
     }

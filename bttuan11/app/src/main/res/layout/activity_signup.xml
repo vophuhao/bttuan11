@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:background="@drawable/pagebkg"
-    tools:context=".SignupActivity">
+    tools:context="SignupActivity">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -52,6 +52,26 @@
                 android:drawableLeft="@drawable/baseline_lock_24"
                 android:drawablePadding="8dp"
                 android:textColor="@color/black"/>
+            <!-- Nút chọn và upload ảnh -->
+            <Button
+                android:id="@+id/select_avatar_button"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Select Avatar"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/lavender"
+                app:cornerRadius="20dp"/>
+
+            <!-- ImageView để hiển thị ảnh chọn -->
+            <ImageView
+                android:id="@+id/selected_avatar_imageview"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/avatar"
+                android:scaleType="centerCrop"/>
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
@@ -65,7 +85,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/loginRedirectText"
-                android:text="Already an user? Login"
+                android:text="Already an user
+                ? Login"
                 android:layout_gravity="center"
                 android:padding="8dp"
                 android:layout_marginTop="10dp"

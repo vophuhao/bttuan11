@@ -62,7 +62,7 @@ dependencies {
     implementation("com.github.TutorialsAndroid:GButton:v1.0.19")
     implementation ("com.google.code.gson:gson:2.10.1")
    /* implementation("com.github.Sauravbhatt:Google-Sign-In-Button:1.0")*/
-
+    implementation("com.cloudinary:cloudinary-android:2.3.1")
 
 }
 apply(plugin = "com.google.gms.google-services")

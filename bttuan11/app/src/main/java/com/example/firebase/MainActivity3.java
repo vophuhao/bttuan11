@@ -27,6 +27,7 @@ public class MainActivity3 extends AppCompatActivity {
         btn2=findViewById(R.id.button2);
         btn3=findViewById(R.id.button3);
         btn4=findViewById(R.id.button4);
+
         btn1.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity3.this, LoginActivity.class);
             startActivity(intent);
@@ -43,6 +44,7 @@ public class MainActivity3 extends AppCompatActivity {
             Intent intent = new Intent(MainActivity3.this, MainActivity2.class);
             startActivity(intent);
         });
+
 
 
     }
