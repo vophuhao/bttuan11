@@ -65,9 +65,9 @@ public class SignupActivity extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
 
         cloudinary = new Cloudinary(ObjectUtils.asMap(
-                "cloud_name", "da0zhlez4",
-                "api_key", "622443243276779",
-                "api_secret", "IW0g7q4nx3wkit53b1QaNyhPRJo"));
+                "cloud_name", "dgwubqzyy",
+                "api_key", "861656355448936",
+                "api_secret", "BwqYp99EEMoBZx4npGb9PCQn8aw"));
 
         signupEmail = findViewById(R.id.signup_email);
         signupPassword = findViewById(R.id.signup_password);

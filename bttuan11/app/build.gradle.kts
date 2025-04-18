@@ -45,6 +45,8 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    implementation(libs.circleimageview)
+
     implementation ("com.google.android.gms:play-services-auth:20.4.1")
     /**firebase dependencies*/
     implementation ("com.google.firebase:firebase-auth:21.1.0")

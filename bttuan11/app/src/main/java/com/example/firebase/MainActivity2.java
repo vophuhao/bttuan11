@@ -32,7 +32,7 @@ public class MainActivity2 extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
-        viewPager2 = findViewById(R.id.vpager);
+        viewPager2 = findViewById(R.id.vpager2);
         list = new ArrayList<>();
         getVideos();
     }
